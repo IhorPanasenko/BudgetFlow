@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetFlow.Api", "BudgetFlow.Api.csproj", "{0D9DF631-528A-4B51-98DA-63ACF9C92792}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetFlow.Api", "BudgetFlow.Api.csproj", "{BDEAAA5D-77FA-4362-A4AE-FEFAD1C4B933}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0D9DF631-528A-4B51-98DA-63ACF9C92792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D9DF631-528A-4B51-98DA-63ACF9C92792}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D9DF631-528A-4B51-98DA-63ACF9C92792}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D9DF631-528A-4B51-98DA-63ACF9C92792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDEAAA5D-77FA-4362-A4AE-FEFAD1C4B933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEAAA5D-77FA-4362-A4AE-FEFAD1C4B933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEAAA5D-77FA-4362-A4AE-FEFAD1C4B933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEAAA5D-77FA-4362-A4AE-FEFAD1C4B933}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BAB15716-7602-42EE-AA18-0082176F0FEF}
+		SolutionGuid = {AFD634B3-06DC-4B59-8D2E-0BCAB9932A1B}
 	EndGlobalSection
 EndGlobal
