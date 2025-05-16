@@ -2,7 +2,7 @@
 using BudgetFlow.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace BudgetFlow.Domain.Data
+namespace BudgetFlow.Infrastructure.Data
 {
     public class ApplicationDbContext : DbContext, IApplciationDbContext
     {

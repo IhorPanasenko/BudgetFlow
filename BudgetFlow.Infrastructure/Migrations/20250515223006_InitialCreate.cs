@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace BudgetFlow.Domain.Migrations
+namespace BudgetFlow.Infrastructure.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration
