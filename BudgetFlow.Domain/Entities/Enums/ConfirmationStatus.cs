@@ -1,6 +1,6 @@
 ﻿namespace BudgetFlow.Domain.Entities.Enums
 {
-    public enum AccountStatus
+    public enum ConfirmationStatus
     {
         NotVerified = 0,
         ForceChangePassword,
