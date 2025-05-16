@@ -2,7 +2,8 @@
 {
     public enum ConfirmationStatus
     {
-        NotVerified = 0,
+        NotConfirmed = 0,
+        PendingConfirmation,
         ForceChangePassword,
         Confirmed
     }

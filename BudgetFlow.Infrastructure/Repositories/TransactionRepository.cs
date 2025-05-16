@@ -1,4 +1,4 @@
-using BudgetFlow.Domain.Data;
+using BudgetFlow.Application.Database;
 using BudgetFlow.Domain.Entities;
 using BudgetFlow.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;

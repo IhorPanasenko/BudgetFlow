@@ -1,5 +1,5 @@
-﻿using BudgetFlow.Domain.Repositories;
-using BudgetFlow.Infrastructure.Data;
+﻿using BudgetFlow.Application.Database;
+using BudgetFlow.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
@@ -8,10 +8,10 @@ namespace BudgetFlow.Infrastructure.Repositories
     public abstract class GenericRepository<TEntity> : IRepository<TEntity>
         where TEntity : class
     {
-        protected readonly ApplicationDbContext _context;
+        protected readonly IApplicationDbContext _context;
         protected readonly DbSet<TEntity> _dbSet;
 
-        public GenericRepository(ApplicationDbContext context)
+        public GenericRepository(IApplicationDbContext context)
         {
             _context = context;
             _dbSet = _context.Set<TEntity>();

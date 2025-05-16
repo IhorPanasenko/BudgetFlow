@@ -1,7 +1,6 @@
-using BudgetFlow.Domain.Data;
+using BudgetFlow.Application.Database;
 using BudgetFlow.Domain.Entities;
 using BudgetFlow.Domain.Repositories;
-using Microsoft.EntityFrameworkCore;
 
 namespace BudgetFlow.Infrastructure.Repositories
 {
@@ -12,6 +11,26 @@ namespace BudgetFlow.Infrastructure.Repositories
         public AccountRepository(IApplicationDbContext context) : base(context)
         {
             _context = context;
+        }
+
+        public Task<IEnumerable<Account>> GetByHouseholdIdAndUserIdAsync(Guid householdId, Guid userId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Account>> GetByHouseholdIdAsync(Guid householdId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Account?> GetByIdAndUserIdAsync(Guid id, Guid userId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Account>> GetByUserIdAsync(Guid userId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

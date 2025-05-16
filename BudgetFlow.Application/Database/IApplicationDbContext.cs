@@ -15,5 +15,6 @@ namespace BudgetFlow.Application.Database
         DbSet<HouseholdMember> HouseholdMembers { get; }
 
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
+        DbSet<TEntity> Set<TEntity>() where TEntity : class;
     }
 }

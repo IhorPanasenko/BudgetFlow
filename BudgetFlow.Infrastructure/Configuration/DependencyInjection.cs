@@ -4,8 +4,9 @@ using BudgetFlow.Infrastructure.Repositories;
 using BudgetFlow.Application.Database;
 using BudgetFlow.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using System.Runtime.CompilerServices;
 using Microsoft.Extensions.Configuration;
+using BudgetFlow.Domain.Entities;
+using Microsoft.AspNetCore.Identity;
 
 namespace BudgetFlow.Infrastructure.Configuration
 {
@@ -30,7 +31,7 @@ namespace BudgetFlow.Infrastructure.Configuration
             services.AddScoped<ISpendingLimitsRepository, SpendingLimitsRepository>();
             services.AddScoped<ITransactionRepository, TransactionRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
-
+            services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 
             return services;
         }

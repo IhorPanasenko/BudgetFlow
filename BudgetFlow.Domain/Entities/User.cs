@@ -12,6 +12,8 @@ namespace BudgetFlow.Domain.Entities
         [Required]
         [MaxLength(100)]
         public string Email { get; set; }
+        public string? PhoneNumber { get; set; }
+        public DateTime? BirthDate { get; set; }
         [Required]
         public string PasswordHash { get; set; }
         public ConfirmationStatus AccountStatus { get; set; }

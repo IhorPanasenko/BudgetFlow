@@ -11,6 +11,11 @@ namespace BudgetFlow.Infrastructure.Repositories
         {
         }
 
+        public async Task<bool> ExistsByEmailAsync(string email)
+        {
+            return await _context.Users.AnyAsync(u => u.Email == email);
+        }
+
         public async Task<User?> GetByEmailAsync(string email)
             => await _dbSet.FirstOrDefaultAsync(u => u.Email == email);
     }   
