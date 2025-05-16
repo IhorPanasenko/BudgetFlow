@@ -2,7 +2,7 @@
 
 namespace BudgetFlow.Domain.Repositories
 {
-    internal interface ISavingGoalRepository : IRepository<SavingsGoal>
+    public interface ISavingGoalRepository : IRepository<SavingsGoal>
     {
         Task<IEnumerable<SavingsGoal>> GetByUserIdAsync(Guid userId);
         Task<IEnumerable<SavingsGoal>> GetByHouseholdIdAsync(Guid householdId);

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BudgetFlow.Application.Database
 {
-    public interface IApplciationDbContext
+    public interface IApplicationDbContext
     {
         DbSet<User> Users { get; }
         DbSet<Account> Accounts { get; }

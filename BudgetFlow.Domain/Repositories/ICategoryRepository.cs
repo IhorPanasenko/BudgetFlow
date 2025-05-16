@@ -2,7 +2,7 @@
 
 namespace BudgetFlow.Domain.Repositories
 {
-    internal interface ICategoryRepository : IRepository<Category>
+    public interface ICategoryRepository : IRepository<Category>
     {
         Task<IEnumerable<Category>> GetByUserIdAsync(Guid userId);
         Task<IEnumerable<Category>> GetDefault();

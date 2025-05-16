@@ -1,5 +1,3 @@
-
-using BudgetFlow.Domain.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace BudgetFlow.Api
@@ -16,9 +14,8 @@ namespace BudgetFlow.Api
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
-            builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseNpgsql(builder.Configuration.GetConnectionString("BudgetFlowDb")));
+            builder.Services.AddInfrastructure();
+            
 
             AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
