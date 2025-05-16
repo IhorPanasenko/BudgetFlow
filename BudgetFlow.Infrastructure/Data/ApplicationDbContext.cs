@@ -1,9 +1,10 @@
-﻿using BudgetFlow.Domain.Entities;
+﻿using BudgetFlow.Application.Database;
+using BudgetFlow.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace BudgetFlow.Domain.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : DbContext, IApplciationDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
@@ -19,8 +20,9 @@ namespace BudgetFlow.Domain.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            // Apply configurations or relationships
         }
+
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+            => base.SaveChangesAsync(cancellationToken);
     }
 }
